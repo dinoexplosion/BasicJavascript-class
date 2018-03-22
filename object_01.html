@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Objects</title>
+  <script>
+  /*
+  there are two ways to define an Object:
+  Method 1 initialize
+
+  NameObject =
+  {
+  attribute1: value,
+  attributeN: valueN,
+}
+*/
+
+student =
+{
+  name: "",
+  lastName: "",
+  webOnline: "",
+  points: 5
+};
+ //the poin (.) can access or refer a attributes from the objects.
+ //NameObject.attributeN
+
+ student.name="Anna";
+ student.lastName="Gryshchenko" ;
+ student.webOnline="website.com";
+ student.points=student.points*4.9;
+
+document.write("Student: " + student.name + " " + student.lastName + "study at: " + student.webOnline);
+
+</script>
+</head>
+<body bgcolor="#000" text="red">
+
+</body>
+</html>

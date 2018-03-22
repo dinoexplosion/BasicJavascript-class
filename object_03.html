@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Objects THIS</title>
+  <script>
+  /* THIS Method, the other way to access in the Object ::::: INSTANCE
+ 1. Function to constructor:
+function NameObject(value1, valueN) =
+{
+  this.attribute = value, ----> is the value inside the parameter
+  this.attributeN = valueN,
+};
+
+2. Instace the objetc Object:
+
+    nameNewObject  = new nameObject(value1,valueN)
+*/
+
+ function student(name, lastName, age){
+   this.name: name,
+   this.lastName: lastName,
+   this.age: age
+ };
+ //create the instace
+
+  stud = new student("Anna", "Gryshchenko", 25);
+
+  document.write("The student: " + stud.lastName + " has "+ stud.age);
+  alert("funcionando");
+
+</script>
+</head>
+<body bgcolor="#000" text="red">
+
+</body>
+</html>

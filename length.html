@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Eventos</title>
+
+</head>
+<body bgcolor="#CCC" text="#000">
+
+  <form name="form1" action="index.html" method="post">
+      <label>Escribe tu código</label>
+      <input type="text" name="cod" onchange="chequeo()">
+      <input type="submit" name="submit" value="Chequear" onclick="chequeo()">
+  </form>
+
+  <script>
+    function chequeo() {
+      x=document.form1.cod.value;
+      x=x.length;
+      a="valor ";
+
+      if (x<6 || x>12)
+      {
+        a+= "incorrecto.";
+      }
+      else a+= "correcto.";
+        document.writeln(a);
+    }
+  </script>
+</body>
+</html>

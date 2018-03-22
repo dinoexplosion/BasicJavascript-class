@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Eventos</title>
+</head>
+<body bgcolor="#000" text="#fff">
+
+  <form name="form1"  method="post">
+      <label>VALUE FOR X</label>
+      <input type="text" name="xx">
+      <label>VALUE FOR Y</label>
+      <input type="text" name="yy">
+      <label>X/Y</label>
+      <input type="text" name="z" style="color:red">
+      <input type="button" name="submit" value="Divide" onClick="divide()">
+  </form>
+
+  <script>
+    function divide() {
+      x=document.form1.xx.value;
+      y=document.form1.xx.value;
+      if (isNaN(x) || isNaN(y)) {
+          a="Insert Numbers";
+      } else{
+          if(y == 0){
+            a="Diferent to Zero";
+          }else{
+            a=x/y;
+          }
+      }
+      document.form1.z.value=a;
+    }
+  </script>
+</body>
+</html>
