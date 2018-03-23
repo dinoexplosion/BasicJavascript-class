@@ -19,17 +19,19 @@ function NameObject(value1, valueN) =
     nameNewObject  = new nameObject(value1,valueN)
 */
 
- function student(name, lastName, age){
-   this.name: name,
-   this.lastName: lastName,
-   this.age: age
+ function student(name, lastName, age, average)
+ {
+   this.name= name,
+   this.lastName= lastName,
+   this.age= age,
+   this.average= average
  };
  //create the instace
 
-  stud = new student("Anna", "Gryshchenko", 25);
+  stud = new student("Anna", "Gryshchenko", 25, 3);
+  stud.average = stud.average*4.1;
 
-  document.write("The student: " + stud.lastName + " has "+ stud.age);
-  alert("funcionando");
+document.write("hola");
 
 </script>
 </head>
