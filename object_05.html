@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Objects THIS</title>
+  <script>
+
+ function calcvolume() {
+   return (this.x*this.y*this.z);
+ }
+
+ function boxs(a,b,c) {
+   this.x=a;
+   this.y=b;
+   this.z=c;
+   this.volume=calcvolume;
+ }
+
+ cube = new boxs(3,6,8);
+ v=cube.volume();
+
+ document.write("The volume is: "+ v );
+
+</script>
+</head>
+<body bgcolor="#000" text="yellow">
+
+</body>
+</html>
