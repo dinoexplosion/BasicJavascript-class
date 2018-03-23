@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Objects TEST</title>
+  <script>
+
+ function toSay(){
+   return ("I am FrontEnd Developer"+ (this.a+this.b));
+ }
+
+function operation(a,b){
+  this.a=a;
+  this.b=b;
+  this.job = toSay;
+}
+
+impression = new operation(3,5);
+g = impression.job();
+
+document.write(g);
+
+</script>
+</head>
+<body bgcolor="#000" text="yellow">
+
+</body>
+</html>
